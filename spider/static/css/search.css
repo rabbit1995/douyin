@@ -1,0 +1,131 @@
+/*清除浏览器默认样式,设置基础样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body{
+	background:url(../img/6.jpg)no-repeat;
+	font:16px "微软雅黑",sans-serif;
+
+/*	width:60%;*/
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+}
+#container{
+	height:90%;
+}
+/*链接*/
+a{
+	color:#CCC;
+	text-decoration:none;
+	padding-left:5px;
+}
+a:hover{
+	color:yellow;
+}
+
+/*导航*/
+#nav{
+	width:1200px;
+	height:60px;
+	line-height:60px;
+	margin:0 auto;
+}
+#rightNav{
+	float:right;
+	margin-bottom:80px;
+	margin-right:10px;
+}
+#nav li{
+	float:left;
+}
+#nav img{
+	float:left;
+	margin-top:10px;
+	height:50px;
+}
+/*分隔线*/
+.fenge{
+	clear:left;
+	margin-bottom:50px;
+	width:1200px;
+	margin:0 auto;
+}
+/*主体内容*/
+#container{
+	margin:0 auto;
+	width:1200px;
+}
+/*个人信息*/
+#leftinfo{
+	margin-top:45px;
+	border:1px solid black;
+	margin-left:20px;
+	box-shadow:3px 3px 3px #888;
+	float:left;
+	width:360px;
+}
+#infoText{
+	float:left;
+	text-align:left;
+	margin-left:10px; 
+	width:345px;
+	color:#ccc;
+}
+#leftinfo>img{
+	border-radius:50%;
+	border:none;
+	width:200px;
+	height:200px; 
+	border:1px solid #888;
+	box-shadow:3px 3px 3px #888;
+	float:right;
+	margin:10px 15px 10px 0px;
+}
+.infoText>img{
+	width:20px;
+}
+/*视频列表*/
+#video_right{
+	float:right;
+	width:780px;
+	text-align:left;
+	margin-right:20px;
+	margin-top:-80px;
+}
+#video_list{
+	height:500px;
+	overflow-y:auto;
+}
+#video_right a{
+	color:#ccc;
+	text-decoration:underline;
+	padding-left:5px;
+}
+.videoList{
+	text-indent:2em;
+}
+.left_title{
+	border-bottom:1px solid #888;
+	margin:20px 0;
+	font:20px "黑体",sans-serif;
+	color:#ccc;
+}
+#listBtn{
+	float:right;
+	margin-right:20px;
+}
+.listBtn{
+	float:left;
+}
+
+/*底部*/
+#tfoot{
+ 	color: #CCC;
+	position:fixed;
+	bottom:0;
+	width:1203px;
+}

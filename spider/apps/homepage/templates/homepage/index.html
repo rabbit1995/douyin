@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!-- <!doctype html> -->
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>抖音爬虫--12亿资金项目团队|中期项目</title>
+	 <link rel="stylesheet" href="{% static 'css/index.css' %}">
+     <script type="text/javascript">
+        function searching(){
+          document.getElementById("sub").value="正在搜索...";
+          document.getElementById("sub").disabled=true;
+          document.forms[0].submit();
+        }
+    </script>
+ </head>
+ <body>
+  <div id="container" class="">
+		<!-- 右侧导航栏 -->
+		<div id="nav" class="">
+			<ul id='rightNav'>
+				<li><a href=#>首页</a>&nbsp;|&nbsp;</li>
+				<li><a>{{ uname }}已登录</a>&nbsp;|&nbsp;</li>
+				<li><a href="{% url 'login:logout' %}">退出</a></li>
+			</ul>
+		</div>
+		<!-- 占位 -->
+		<!-- <div class="zhanwei"></div> -->
+		<!-- LOGO -->
+		<div id="logo" class="">
+			<a>
+				<img src="{% static  'img/logo.png' %}" width="" height="" border="0" alt="">
+			</a>
+		</div>
+
+          <a class="msg">{{ message }}</a>
+	  <div class="s-bar">
+
+	   	<form action="{% url 'homepage:search' %}" method="GET">
+			  <input type="text" name="search" value="请输入抖音分享链接:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入抖音分享链接:';}"><input type="submit"  value="搜索" onclick="searching()" id="sub">
+	  	</form>
+		</div>
+
+		<!-- 使用教程 -->
+		<div id="helper" class="">
+			<p>使用教程：</p>
+			<img src="{% static  'img/help1.png' %}" title='使用教程①'>
+			<img src="{% static  'img/help2.png' %}" title='使用教程②'>
+			<img src="{% static  'img/help3.png' %}" title='使用教程③'>
+			<img src="{% static  'img/help4.png' %}" title='使用教程④'>
+			<img src="{% static  'img/help5.png' %}" title='使用教程⑤'>
+			<img src="{% static  'img/help6.png' %}" title='使用教程⑥'>
+			<img src="{% static  'img/help7.png' %}" title='使用教程⑦'>
+		</div>
+			<!-- 底部 -->
+		<div id="tfoot" class="">
+			<p>Copyright&nbsp;&copy;&nbsp;2018&nbsp;12亿资金项目团队&nbsp;All&nbsp;Rights&nbsp;Reserved</p>
+			<p>Complaint:&nbsp;hcanxuan@163.com</p>
+			<p>达内教育|中期项目</p>
+		</div>
+  </div>
+
+
+</body>
+</html>

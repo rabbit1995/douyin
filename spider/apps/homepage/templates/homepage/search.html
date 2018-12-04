@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<!-- <!doctype html> -->
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>抖音爬虫--12亿资金项目团队|中期项目</title>
+	<link rel='stylesheet' href="{% static 'css/search.css' %}">
+<!-- 	<script type="text/javascript" src="js/jq.js"></script> -->
+	<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+ </head>
+ <body>
+  <div id="ttop" class="">
+		<!-- 右侧导航栏 -->
+		<div id="nav" class="">
+			<img src="{% static 'img/logo.png' %}" width="" height="" border="0" alt="">
+			<ul id='rightNav'>
+				<li><a href="{% url 'homepage:index' %}">首页</a>&nbsp;|&nbsp;</li>
+				<li><a>{{ uname }}已登录</a>&nbsp;|&nbsp;</li>
+				<li><a href="{% url 'login:logout' %}">退出</a></li>
+			</ul>
+		</div>
+		<p class='fenge'></p>
+	<!-- 主体内容	 -->
+	<div id="container" class="">
+		<!-- 左侧个人资料 -->
+		<div id="leftinfo" class="">
+			<img id="userPhoto" src={{ item.head }} width="" height="" border="0" alt="">
+			<div id="infoText" class="">			
+				<p class='infoText'><img src="{% static 'img/id.png' %}">抖音ID：<span>{{item.douyin_id}}</span></p>
+				<p class='infoText'><img src="{% static 'img/nc.png' %}">昵&nbsp;&nbsp;&nbsp;&nbsp;称：<span>{{ item.nick_name }}</span></p>
+				<p class='infoText'><img src="{% static 'img/rz.png' %}">认&nbsp;&nbsp;&nbsp;&nbsp;证：<span> {{ item.info }}</span></p>
+				<p class='infoText'><img src="{% static 'img/gz.png' %}">关&nbsp;&nbsp;&nbsp;&nbsp;注：<span>{{ item.guanzhu }} </span></p>
+				<p class='infoText'><img src="{% static 'img/fs.png' %}">粉&nbsp;&nbsp;&nbsp;&nbsp;丝：<span>{{ item.fans }}</span></p>
+				<p class='infoText'><img src="{% static 'img/dz.png' %}">点&nbsp;&nbsp;&nbsp;&nbsp;赞：<span>{{ item.zan }}</span></p>
+				<p class='infoText'><img src="{% static 'img/zp.png' %}">作&nbsp;&nbsp;&nbsp;&nbsp;品：<span>{{ item.works }}</span></p>
+				<p class='infoText'><img src="{% static 'img/xh.png' %}">喜&nbsp;&nbsp;&nbsp;&nbsp;欢：<span>{{ item.like_num }}</span></p>
+			</div>
+		</div>
+	<!-- 右侧,视频列表 -->
+		<div id="video_right" class="">
+			<p class='left_title'>视频列表：</p>
+			<div id="video_list" class="">
+				{% for key,value in video_url.items %}
+				<p class='videoList'>
+					<input type="checkbox" name="check">
+					<a target="_black" href="{{value}}" rel="noreferrer">{{ key }}</a>
+				</p>
+				{% endfor %}
+			</div>
+			<div id="listBtn" class="">
+					<a href="javascript:void(0)" class='listBtn' id="allCheck">全选</a>
+					<a href="javascript:void(0)" class='listBtn' id="ghostCheck">反选</a>
+					<a href="javascript:void(0)" class='listBtn' id="noneCheck">取消</a>
+					<a href="javascript:void(0)" class='listBtn' id="dowmCheck">复制链接</a>
+					<div id="cptext" class="" style="width:1px;height:1px;border:none;color:white;overflow:hidden;"></div>
+			</div>
+		</div>
+			<!-- 底部 --> 
+		<div id="tfoot" class="">
+			<p>Copyright&nbsp;&copy;&nbsp;2018&nbsp;12亿资金项目团队&nbsp;All&nbsp;Rights&nbsp;Reserved</p>
+			<p>Complaint:&nbsp;123456@163.com</p>
+			<p>达内教育|中期项目</p>
+		</div>
+
+	</div>
+
+</body>
+</html>

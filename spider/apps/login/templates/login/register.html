@@ -1,0 +1,93 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>用户界面-注册</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Career Multi Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" /> <!-- Style-CSS -->
+<link rel="stylesheet" href="{% static  'css/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!--<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">-->
+
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+</head>
+<body>
+<script src="{% static 'js/jquery.vide.min.js' %}"></script>
+<!-- main -->
+<div data-vide-bg="{% static 'video/Ipad' %}" style="width: 100%; height: 100%;">
+<div class="center-container" style="width:100%; height:100%;">
+<div class="w3ls-header">
+		<h3>&nbsp;</h3>
+	<div class="header-main">
+
+<div class="videoregister">
+    <div class="top-login second">
+      <div class="border">
+        <span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <h3>注册</h3>
+      <div class="header-bottom">
+        <div class="header-right w3agile">
+          <div class="header-left-bottom agileinfo">
+            <form action="/register" method="post">
+              {% csrf_token %}
+              <div class="icon1">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                {{ register_form.username }}
+              </div>
+              <div class="icon1">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                {{ register_form.email }}
+              </div>
+              <div class="icon1">
+                <i class="fa fa-phone" aria-hidden="true"></i>  
+                {{ register_form.pnumber }}
+              </div>
+              <div class="icon1">
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                {{ register_form.password1 }}
+              </div>
+              <div class="icon1">
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                {{ register_form.password2 }}
+              </div>
+              <a>{{ message }}</a>
+              <div class="bottom">
+                <input type="submit" id="dl" value="提交" />
+                <input type="submit" id="zc" value="返回" onclick="javascript:location.href='/'"/>
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div class="clear"></div>
+	</div>
+	
+	<!-- copyright start here -->
+	<div class="copyright">
+		<p>Copyright © 2018 12亿资金项目团队 All Rights Reserved </p>
+	</div>
+	<!--copyright end here-->
+</div>
+<!--header end here-->
+</div>
+</div>
+</body>
+</html>

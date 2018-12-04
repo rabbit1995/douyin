@@ -1,0 +1,202 @@
+/*清除浏览器默认样式,设置基础样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body{
+	background:url(../img/5.jpg)no-repeat;
+    background-size: cover;
+	font-family:"Open Sans",sans-serif;
+    font-size: 100%;
+	width:60%;
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+
+}
+/*body {*/
+   /*background:url(../img/5.jpg)no-repeat;*/
+   /*background-size: cover;*/
+   /*font-family: 'Open Sans', sans-serif;*/
+   /*font-size: 100%;*/
+/*}*/
+#container{
+	height:100%;
+}
+
+/*链接*/
+a{
+	color:#CCC;
+	text-decoration:none;
+	padding-left:5px;
+}
+a:hover{
+	color: #7ac209;
+}
+
+/*导航*/
+#nav{
+	width:100%;
+	height:3.5%;
+	line-height:30px;
+}
+/*顶部导航栏右上角*/
+#rightNav{
+	float:right;
+	margin-bottom:80px;
+	margin-right:10px;
+}
+#rightNav li{
+	float:left;
+}
+/*设置logo大小、居中*/
+#logo{
+	margin:0 auto;
+	text-align:center;
+	clear:right;
+}
+#logo img{
+	clear:left;
+	width:70%;
+	margin:60px auto;
+
+}
+/*使用教程*/
+#helper{
+	margin:0 auto;
+	width:700px;
+	text-align:center;
+	margin-top:80px;
+}
+#helper>p{
+	float:left;
+	margin-left:5px;
+	margin-right:-120px;
+  margin-top: -30px;
+	color:#BDBDBD;
+	font-size:20px;
+	cursor:help;
+}
+#helper img{
+	width:10%;
+	margin-top:10px;
+	margin-left:10px;
+	transition:0.5s;
+	cursor:help;
+}
+#helper img:hover{
+	transform:scale(2.1);
+}
+
+/*底部*/
+#tfoot{
+	position:fixed;
+    color: #CCC;
+	bottom:0;
+	right:20%;
+	width:60%;
+}
+/*!*搜索框*!*/
+.s-bar {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5em 0em 0.5em 0em;
+}
+.s-bar input[type="text"] {
+  float:left;
+  font-size: 1em;
+  font-weight: 620;
+  color: #fff;
+  padding: 1.3em 1em 1.3em 1.5em;
+  width: 70%;
+ text-shadow: rgba(80, 80, 80, 0.08) 1px 1px,
+               rgba(80, 80, 80, 0.07) 2px 2px,
+               rgba(80, 80, 80, 0.09) 3px 3px,
+               rgba(80, 80, 80, 0.04) 4px 4px,
+               rgba(80, 80, 80, 0.06) 5px 5px;
+  border-radius: 5px 0px 0px 5px;
+ -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.s-bar input[type="submit"]{
+  float:left;
+  display:inline-block;
+  height:59.59px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.3em 0.5em;
+  width: 22%;
+  text-align: center;
+  text-shadow: rgba(80, 80, 80, 0.08) 1px 1px,
+               rgba(80, 80, 80, 0.07) 2px 2px,
+               rgba(80, 80, 80, 0.09) 3px 3px,
+               rgba(80, 80, 80, 0.04) 4px 4px,
+               rgba(80, 80, 80, 0.06) 5px 5px;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius:0px 5px 5px 0px;
+  -moz-border-radius:0px 5px 5px 0px;
+  -o-border-radius:0px 5px 5px 0px;
+  margin: 0px 0px 0px -4px;
+  background:#7ac209;
+  cursor:pointer;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background: #7ac209;
+  background: -moz-linear-gradient(top, #7ac209 0%, #7ac209 37%, #7ac209 66%, #7ac209 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac209), color-stop(37%,#7ac209), color-stop(66%,#7ac209), color-stop(100%,#7ac209));
+  background: -webkit-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: -o-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: -ms-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: linear-gradient(to bottom, #8EDB15 0%,#8EDB15 37%,#8EDB15 66%,#8EDB15 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac209', endColorstr='#7ac209',GradientType=0 );
+}
+.s-bar input[type="button"]{
+  float:left;
+  display:inline-block;
+  height:59.59px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.3em 0.5em;
+  width: 22%;
+  text-align: center;
+  text-shadow: rgba(80, 80, 80, 0.08) 1px 1px,
+               rgba(80, 80, 80, 0.07) 2px 2px,
+               rgba(80, 80, 80, 0.09) 3px 3px,
+               rgba(80, 80, 80, 0.04) 4px 4px,
+               rgba(80, 80, 80, 0.06) 5px 5px;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius:0px 5px 5px 0px;
+  -moz-border-radius:0px 5px 5px 0px;
+  -o-border-radius:0px 5px 5px 0px;
+  margin: 0px 0px 0px -4px;
+  background:#7ac209;
+  cursor:pointer;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background: #7ac209;
+  background: -moz-linear-gradient(top, #7ac209 0%, #7ac209 37%, #7ac209 66%, #7ac209 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac209), color-stop(37%,#7ac209), color-stop(66%,#7ac209), color-stop(100%,#7ac209));
+  background: -webkit-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: -o-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: -ms-linear-gradient(top, #7ac209 0%,#7ac209 37%,#7ac209 66%,#7ac209 100%);
+  background: linear-gradient(to bottom, #8EDB15 0%,#8EDB15 37%,#8EDB15 66%,#8EDB15 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac209', endColorstr='#7ac209',GradientType=0 );
+}
+.s-bar input[type="submit"]:hover{
+	opacity: 0.8;
+      filter: alpha(opacity=100);
+      transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;}
